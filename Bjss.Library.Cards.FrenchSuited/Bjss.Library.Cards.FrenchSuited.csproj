@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14674796-6904-4ED6-B830-1F062A3EFF43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bjss.Library.Cards.FrenchSuited</RootNamespace>
+    <AssemblyName>Bjss.Library.Cards.FrenchSuited</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="CardResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IFrenchSuitedCard.cs" />
+    <Compile Include="Pack.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rank.cs" />
+    <Compile Include="Suit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CardResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CardResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bjss.Library.Cards.Contracts\Bjss.Library.Cards.Contracts.csproj">
+      <Project>{F4692B2D-D8D2-408A-BFB6-1273F4DE54B3}</Project>
+      <Name>Bjss.Library.Cards.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cards_01_clubs.bmp" />
+    <Content Include="Resources\cards_02_clubs.bmp" />
+    <Content Include="Resources\cards_03_clubs.bmp" />
+    <Content Include="Resources\cards_04_clubs.bmp" />
+    <Content Include="Resources\cards_05_clubs.bmp" />
+    <Content Include="Resources\cards_06_clubs.bmp" />
+    <Content Include="Resources\cards_07_clubs.bmp" />
+    <Content Include="Resources\cards_08_clubs.bmp" />
+    <Content Include="Resources\cards_09_clubs.bmp" />
+    <Content Include="Resources\cards_10_clubs.bmp" />
+    <Content Include="Resources\cards_11_clubs.bmp" />
+    <Content Include="Resources\cards_12_clubs.bmp" />
+    <Content Include="Resources\cards_13_clubs.bmp" />
+    <Content Include="Resources\cards_14_diamonds.bmp" />
+    <Content Include="Resources\cards_15_diamonds.bmp" />
+    <Content Include="Resources\cards_16_diamonds.bmp" />
+    <Content Include="Resources\cards_17_diamonds.bmp" />
+    <Content Include="Resources\cards_18_diamonds.bmp" />
+    <Content Include="Resources\cards_19_diamonds.bmp" />
+    <Content Include="Resources\cards_20_diamonds.bmp" />
+    <Content Include="Resources\cards_21_diamonds.bmp" />
+    <Content Include="Resources\cards_22_diamonds.bmp" />
+    <Content Include="Resources\cards_23_diamonds.bmp" />
+    <Content Include="Resources\cards_24_diamonds.bmp" />
+    <Content Include="Resources\cards_25_diamonds.bmp" />
+    <Content Include="Resources\cards_26_diamonds.bmp" />
+    <Content Include="Resources\cards_27_hearts.bmp" />
+    <Content Include="Resources\cards_28_hearts.bmp" />
+    <Content Include="Resources\cards_29_hearts.bmp" />
+    <Content Include="Resources\cards_30_hearts.bmp" />
+    <Content Include="Resources\cards_31_hearts.bmp" />
+    <Content Include="Resources\cards_32_hearts.bmp" />
+    <Content Include="Resources\cards_33_hearts.bmp" />
+    <Content Include="Resources\cards_34_hearts.bmp" />
+    <Content Include="Resources\cards_35_hearts.bmp" />
+    <Content Include="Resources\cards_36_hearts.bmp" />
+    <Content Include="Resources\cards_37_hearts.bmp" />
+    <Content Include="Resources\cards_38_hearts.bmp" />
+    <Content Include="Resources\cards_39_hearts.bmp" />
+    <Content Include="Resources\cards_40_spades.bmp" />
+    <Content Include="Resources\cards_41_spades.bmp" />
+    <Content Include="Resources\cards_42_spades.bmp" />
+    <Content Include="Resources\cards_43_spades.bmp" />
+    <Content Include="Resources\cards_44_spades.bmp" />
+    <Content Include="Resources\cards_45_spades.bmp" />
+    <Content Include="Resources\cards_46_spades.bmp" />
+    <Content Include="Resources\cards_47_spades.bmp" />
+    <Content Include="Resources\cards_48_spades.bmp" />
+    <Content Include="Resources\cards_49_spades.bmp" />
+    <Content Include="Resources\cards_50_spades.bmp" />
+    <Content Include="Resources\cards_51_spades.bmp" />
+    <Content Include="Resources\cards_52_spades.bmp" />
+    <Content Include="Resources\cards_53_backs.bmp" />
+    <Content Include="Resources\cards_54_backs.bmp" />
+    <Content Include="Resources\cards_55_backs.bmp" />
+    <Content Include="Resources\cards_56_backs.bmp" />
+    <Content Include="Resources\cards_57_backs.bmp" />
+    <Content Include="Resources\cards_58_backs.bmp" />
+    <Content Include="Resources\cards_59_backs.bmp" />
+    <Content Include="Resources\cards_60_backs.bmp" />
+    <Content Include="Resources\cards_61_backs.bmp" />
+    <Content Include="Resources\cards_62_backs.bmp" />
+    <Content Include="Resources\cards_63_backs.bmp" />
+    <Content Include="Resources\cards_64_backs.bmp" />
+    <Content Include="Resources\cards_65_backs.bmp" />
+    <Content Include="Resources\cards_67_backs.bmp" />
+    <Content Include="Resources\cards_68_backs.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
